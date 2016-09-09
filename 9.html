@@ -1,0 +1,21 @@
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<h1>Using Jenkins to automate the build</h1>
+<div class=outer>
+<div class=info>
+<p><i><b>Prerequistes: Have setup Tomcat7 and Jenkins. Have a Basic website to deploy</b></i></p>
+<p>Currently you should be able to build the site manually by clicking the <i><b>Build</i></b> button.</p>
+<p>The next step is configuring Jenkins to periodically re-build the site.</p>
+<p>To do this click <i><b>Configure</i></b>, go to <i><b>Build Triggers</i></b> and select <i><b>Build Periodically.</i></b></p>
+<p>Here you can define a schedule, it is worth reading into how schedules are expressed to get a better understanding, but for the purpose of this guide you can use <i><b>H/15 * * * *</i></b> which builds the code every 15 miuntes.</p>
+<p>Once you have clicked <i><b>Apply</i></b> and <i><b>Save</i></b>, sit back, relax and wait for Jenkins to build your site!
+</div>
+<div class=image>
+<img src="http://simpleicon.com/wp-content/uploads/clock-time-3.png" width=90%>
+</div>
+<form action="index.html">
+    <input type="submit" value="Home">
+</form>
+</div>
